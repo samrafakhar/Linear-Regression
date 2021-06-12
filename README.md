@@ -1,36 +1,30 @@
 # Linear-Regression
 Linear Regression using Python 
 
-
 ## Part 1: Linear Regression with One Variable
-In the python notebook (Linear_Regression_With_One_Variable.ipynb) we have implemented linear regression with one Variable. Population of the city is our independent variable and we are trying to predict the value of Profit according to the Population using gradient descent. Image of the training data is shown below: 
+Suppose you are the Chief Executive Officer of a bakery and are considering diﬀerent cities for opening a new outlet. The chain already has outlets in various cities and you have data for proﬁts and populations from the cities. You would like to use this data to help you select which city to expand to next.
 
-![image](https://user-images.githubusercontent.com/68266703/121768650-b8b02e00-cb78-11eb-95bb-f143d426de55.png)
+### Plotting Data
 
-The cost function is as follows:
+![vis](https://user-images.githubusercontent.com/68819501/121777006-5ae80a00-cba9-11eb-81fe-9d090824024d.PNG)
 
-![image](https://user-images.githubusercontent.com/68266703/121768686-e09f9180-cb78-11eb-843b-8d6c91aa721d.png)
+### Gradient Descent
 
-
-The best fit line after performing gradient descent is shown below:
-
-![image](https://user-images.githubusercontent.com/68266703/121768673-d382a280-cb78-11eb-9457-51d86e1906df.png)
-
+![line fit](https://user-images.githubusercontent.com/68819501/121777007-5d4a6400-cba9-11eb-9ba6-0a7293521103.PNG)
 
 ## Part 2: Linear Regression with Multiple Variables
-Linear Regression with Multiple Variables is performed in two ways. Gradient descent and normal equation. Both the formulas are shown below:
+### Feature Normalization
+By looking at the data values, note that house sizes are about 1000 times the number of bedrooms. When features diﬀer by orders of magnitude, ﬁrst performing feature scaling can make gradient descent converge much more quickly.
 
+•	Subtract the mean value of each feature from the dataset.
 
-Gradient Descent:
+•	After subtracting the mean, additionally scale (divide) the feature values by their respective “standard deviations.”
 
-![image](https://user-images.githubusercontent.com/68266703/121768798-94088600-cb79-11eb-9161-b40b2e1935af.png)
+### Gradient Descent
 
-Normal Equation:
+![1](https://user-images.githubusercontent.com/68819501/121777036-7fdc7d00-cba9-11eb-8e6b-1e21c28a389e.PNG)
 
-![image](https://user-images.githubusercontent.com/68266703/121768744-32481c00-cb79-11eb-85d5-d050ddaf39e4.png)
+### Selecting learning rates
 
+![2](https://user-images.githubusercontent.com/68819501/121777070-a7cbe080-cba9-11eb-883d-e93d1b24deef.PNG)
 
-
-
-
-Convergence of both the methods is almost the same
